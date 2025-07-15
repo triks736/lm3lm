@@ -1,0 +1,41 @@
+rom numpy import*
+def saisire(n):
+    n=int(input("entier"))
+    while not (3<=n<=20):
+        n=int(input("entier"))
+    return n
+def remplir(t,n):   
+    e={}
+    e=dict()
+    e["code"]=input["code"]
+    while not len e["code"]==3:
+        e["code"]=input["nom"]
+        e["note"]=input["nom"]
+    while not (alphanum(e["note"])):
+        e["note"]=input("nom")
+    t[i]=0
+def alphanum(ch):
+    i=0
+    while (i<=len(ch)-1 and ("a"<=ch[i].upper()<="z"or "e"<=ch[i]<="10")):
+        i+=1
+    return i>len (ch)-1
+def piloté(p):
+    p=input("donner le rbot")
+    return p
+def autonome(a):
+    a=input("donner autonom")
+    return a
+def afficher (t,n,a,p):
+    print("donner autonom",a)
+    nb=0
+    for i in range (n):
+        if (t[i]["note"]==a):
+            nb+=1
+        print("note",nb,":",t[i]["code"],"",t[i]["nom"])
+n=saisire()
+t=array([{}]*int)
+replir(t,n)
+a=autonome
+p=piloté
+afficher(t,n,a,p)
+        
