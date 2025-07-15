@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Pizza Délicieuse</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #fff8f0;
+        }
+        header {
+            background-color: #1518d8;
+            color: rgb(0, 0, 0);
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #1b0fcd;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: rgb(0, 0, 0);
+            margin: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .section {
+            padding: 20px;
+        }
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+            border-radius: 8px;
+        }
+        footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        form {
+            background-color: #464441;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 400px;
+            margin: auto;
+        }
+        input, select, textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #000000;
+            color: rgb(180, 180, 180);
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Pizza Délicieuse 🍕</h1>
+        <p>La meilleure pizza en ville</p>
+    </header>
+
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="/menu.html">Menu</a>
+        <a href="#commande">Commander</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="section" id="accueil">
+        <h2>Bienvenue chez Pizza Délicieuse</h2>
+        <p>.</p>
+    </div>
+
+    
+    </div>
+
+    <div class="section" id="commande">
+        <h2>Commander une Pizza</h2>
+        <form>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="pizza">Choisir une plats :</label>
+            <select id="pizza" name="pizza" required>
+                <option value="pizza">pizza</option>
+                <option value="ma9loub">ma9loub</option>
+                <option value="bargette farci">bargette farci</option>
+            </select>
+
+            <label for="adresse">Adresse :</label>
+            <textarea id="adresse" name="adresse" required></textarea>
+
+            <input type="submit" value="Commander maintenant">
+        </form>
+    </div>
+
+    <div class="section" id="contact">
+        <h2>Contact</h2>
+        <p>📞 71 123 456 | 📧 contact@pizzadelicieuse.com</p>
+        <p>📍 12 Rue des Gourmands, Tunis</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Pizza Délicieuse. Tous droits réservés.</p>
+    </footer>
+
+</body>
+</html>
